@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bookit"
+dynamic = ["version"]
+description = "A runtime for hyperbooks."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "Kit Ledru", email = "kit@ledru.dev"}]
+keywords = ['nbdev']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/1iis/bookit"
+Documentation = "https://1iis.github.io/bookit/"
+
+[project.entry-points.nbdev]
+bookit = "bookit._modidx:d"
+
+[tool.setuptools.dynamic]
+version = {attr = "bookit.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["bookit"]
+
+[tool.nbdev]

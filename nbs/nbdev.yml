@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "bookit"
+  site-url: "https://1iis.github.io/bookit"
+  description: "A runtime for hyperbooks."
+  repo-branch: main
+  repo-url: "https://github.com/1iis/bookit"
